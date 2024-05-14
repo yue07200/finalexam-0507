@@ -37,9 +37,15 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // dateTimePicker1
@@ -141,12 +147,70 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = SystemColors.ControlLight;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Center;
+            pictureBox4.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox4.Location = new Point(1106, 312);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(238, 176);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 15;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(837, 117);
+            button1.Name = "button1";
+            button1.Size = new Size(28, 29);
+            button1.TabIndex = 16;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(1110, 118);
+            button2.Name = "button2";
+            button2.Size = new Size(28, 29);
+            button2.TabIndex = 17;
+            button2.Text = "X";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(838, 315);
+            button3.Name = "button3";
+            button3.Size = new Size(28, 29);
+            button3.TabIndex = 18;
+            button3.Text = "X";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.Location = new Point(1110, 315);
+            button4.Name = "button4";
+            button4.Size = new Size(28, 29);
+            button4.TabIndex = 19;
+            button4.Text = "X";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1374, 638);
+            Controls.Add(button4);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(button1);
+            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(label1);
@@ -161,6 +225,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,5 +241,10 @@
         private Label label1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private Button button1;
+        private Button button2;
+        private Button button3;
+        private Button button4;
     }
 }
